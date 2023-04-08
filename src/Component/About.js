@@ -37,13 +37,12 @@ const About = (props) => {
         <>
             {/* covid section code... */}
             <section id="about">
-            <br /><br /><br />
                 <h1>Covid-19</h1>
                 <div className="box_cov">
-                    <div className="child small" id="rot-img">
+                    <div className="protectChild small" id="rot-img">
                         <img src={cov} alt="Corona Virus" className="img" />
                     </div>
-                    <div className="child cap">
+                    <div className="protectChild cap">
                         <p>
                             <strong>COVID-19</strong> is defined as disease caused by a Novel Corona-Virus, formally called <span> <em>SARS-CoV-2(2019-nCoV),</em></span>
                             which was first identified illness case in Wuhan City, Hubei Province, China. It was initially reported to the World Health Organization (WHO) on <em> December 31, 2019.</em>
@@ -55,10 +54,12 @@ const About = (props) => {
 
                 </div>
             </section>
-            <br /><br />
+            <hr />
             {/* Symptoms code start.... */}
             <section id="symptoms">
-                <h2>Symptoms</h2>
+            <br />
+                <u><h2 className='h2'>&nbsp;Symptoms&nbsp;</h2></u>
+            <br />
                 <div className="box_cov sym">
                     <div className="child sympt">
                         <img src={fever} alt="FEVER" className="sym-img" />
@@ -113,17 +114,17 @@ const About = (props) => {
                 </div>
 
             </section>
-            <hr />
             {/* Precaustions section start  */}
             <section id="protect">
-                <h2>How to protect yourself ?</h2>
-
+            <br />
+                <u><h2>&nbsp;How to protect yourself ?&nbsp;</h2></u>
+            <br />
                 <span className=" v-span" >"Precautions is better than cure"</span>
                 <div className="box_cov">
-                    <div className="child small">
+                    <div className="protectChild small">
                         <img src={wash} alt="Wash your hands" className="img img-pre" />
                     </div>
-                    <div className="child large-pre">
+                    <div className="protectChild large-pre">
                         <p className="p-pre">
                             ▶Wash your hands frequently with soap and water.
                             <br />
@@ -135,24 +136,22 @@ const About = (props) => {
                     </div>
                 </div>
                 <div className="box box_cov">
-                    <div className="child small">
+                    <div className="protectChild small">
                         <img src={mask} alt="Wear a mask" className="img img-pre" />
                     </div>
-                    <div className="child large-pre">
+                    <div className="protectChild large-pre">
                         <p className="p-pre">
                             ▶Wear a mask which should have two or more layers of washable, breathable fabric
                             <br />
                             ▶Choose masks that completely cover your nose and mouth.
                         </p>
-
                     </div>
-
                 </div>
                 <div className="box_cov">
-                    <div className="child small">
+                    <div className="protectChild small">
                         <img src={home} alt="Stay at home" className="img img-pre" />
                     </div>
-                    <div className="child large-pre">
+                    <div className="protectChild large-pre">
                         <p className="p-pre">
                             ▶Don't go outside untill its emergency.
                             <br />
@@ -165,10 +164,10 @@ const About = (props) => {
 
                 </div>
                 <div className="box box_cov">
-                    <div className="child small">
+                    <div className="protectChild small">
                         <img src={distance} alt="Maintain distance" className="img img-pre" />
                     </div>
-                    <div className="child large-pre">
+                    <div className="protectChild large-pre">
                         <p className="p-pre">
                             ▶Avoid close contact with people and maintain a <em>6 feet</em> distance.
                             <br />
@@ -176,32 +175,27 @@ const About = (props) => {
                             <br />
                             ▶Maintain a safe distance from animals and avoid unnecessary contact.
                         </p>
-
                     </div>
-
                 </div>
                 <div className="box_cov">
-                    <div className="child small">
-                        <img id="crowd" src={crowd} alt="Stay away from crowd areas" className="img img-pre" />
+                    <div className="protectChild small">
+                        <img id="crowd" style={{width: '14rem', height: '11rem'}} src={crowd} alt="Stay away from crowd areas" className="img img-pre" />
                     </div>
-                    <div className="child large-pre">
+                    <div className="protectChild large-pre">
                         <p className="p-pre">
-
                             ▶Avoid crowds areas like markets, restaurants, bars, movie theaters etc.
                             <br />
                             ▶Being in crowd can put you at higher risk for COVID-19.
                             <br />
                             ▶Avoid indoor spaces that do not offer fresh air from the outdoors.
                         </p>
-
                     </div>
-
                 </div>
                 <div className=" box box_cov">
-                    <div className="child small">
+                    <div className="protectChild small">
                         <img src={touch} id="touch" alt="Don't touch" className="img img-pre" />
                     </div>
-                    <div className="child large-pre">
+                    <div className="protectChild large-pre">
                         <p className="p-pre">
                             ▶Keep your hands away from your eyes, nose, and mouth.
                             <br />
@@ -209,60 +203,50 @@ const About = (props) => {
                             <br />
                             ▶Try to clean your hands properly before touching your face.
                         </p>
-
                     </div>
-
                 </div>
                 <div className="box_cov">
-                    <div className="child small">
+                    <div className="protectChild small">
                         <img src={cover} id="cover" alt="Cover your mouth" className="img img-pre" />
                     </div>
-                    <div className="child large-pre">
+                    <div className="protectChild large-pre">
                         <p className="p-pre">
                             ▶Cover your mouth and nose with a tissue paper or masks when coughing or sneezing.
                             <br />
                             ▶You can also use your elbow to sneez and immediately wash your hands with soap and water for at least 20 seconds.
-
                         </p>
-
                     </div>
-
                 </div>
                 <div className="box box_cov">
-                    <div className="child small">
-                        <img src={clean} alt="Keep clean environment" className="img img-pre" />
+                    <div className="protectChild small">
+                        <img src={clean} style={{width: '6.5rem',height: '9rem'}} alt="Keep clean environment" className="img img-pre" />
                     </div>
-                    <div className="child large-pre">
+                    <div className="protectChild large-pre">
                         <p className="p-pre">
                             ▶Keep clean environment around yourself.
                             <br />
                             ▶Regularly clean and disinfect frequently touched surfaces like phones , doorknobs, lights etc.
-
                         </p>
-
                     </div>
-
                 </div>
                 <div className="box_cov">
-                    <div className="child small">
+                    <div className="protectChild small">
                         <img src={consult} alt="Consult to your doctor" className="img img-pre" />
                     </div>
-                    <div className="child large-pre">
+                    <div className="protectChild large-pre">
                         <p className="p-pre">
                             ▶Moniter your health daily and consult to the doctor.
                             <br />
                             ▶Seek medical care early if you have a fever, cough or difficulty in breathing.
-
                         </p>
-
                     </div>
-
                 </div>
             </section>
             {/* vaccination section start  */}
             <section id="vaccine">
-<br /><br />
-                <h2>Vaccination</h2>
+                <br />
+                <u><h2 className='h2'>&nbsp;Vaccination&nbsp;</h2></u>
+                <br />
                 <div className="para-vaccine">
                     <span className="v-span">
                         "When it comes to vaccines decision, there is no dilemma"
@@ -346,12 +330,11 @@ const About = (props) => {
 
 
             </section>
-            
             {/* pandemic code  */}
             <section id="pandemic">
-            <br /><br />
-                <h2>Pandemic Situation : Lockdown</h2>
-
+            <br />
+                <u><h2 className='h2'>&nbsp;Pandemic Situation : Lockdown&nbsp;</h2></u>
+            <br />
                 <div className="pand">
                     <p className="v-pan"> A pandemic is the global outbreak of a disease.
                         COVID-19 began as an epidemic in China, before making its way around the world in a matter of months and becoming a pandemic.
@@ -400,7 +383,6 @@ const About = (props) => {
                 </div>
 
             </section>
-            <hr />
         </>
     );
 };

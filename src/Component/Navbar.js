@@ -13,29 +13,32 @@ function Navbar() {
 
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav ml-auto">
-            <li className="nav-item">
+            <li className="nav-item" style={{padding: '0px 10px'}}>
               <a className="nav-link" href="/">Home <span className="sr-only">(current)</span></a>
             </li>
-            <li className="nav-item">
+            <li className="nav-item" style={{padding: '0px 10px'}}>
               <a className="nav-link" href="/about">About</a>
             </li>
-            <li className="nav-item">
+            <li className="nav-item" style={{padding: '0px 10px'}}>
               <a className="nav-link" href="/about#symptoms">Symptoms</a>
             </li>
-            <li className="nav-item">
+            <li className="nav-item" style={{padding: '0px 10px'}}>
               <a className="nav-link" href="/about#protect">Precaustions</a>
             </li>
-            <li className="nav-item">
+            <li className="nav-item" style={{padding: '0px 10px'}}>
               <a className="nav-link" href="/about#vaccine">Vaccination</a>
             </li>
-            <li className="nav-item">
+            <li className="nav-item" style={{padding: '0px 10px'}}>
               <a className="nav-link" href="/about#pandemic">Pandamic</a>
             </li>
-            <li className="nav-item">
+            <li className="nav-item" style={{padding: '0px 10px'}}>
               <a className="nav-link" href="/covid">Covid-19 Tracker</a>
             </li>
-            <li className="nav-item">
+            <li className="nav-item" style={{padding: '0px 10px'}}>
               <a className="nav-link" href="/covidGraph">Covid Graph</a>
+            </li>
+            <li className="nav-item" style={{padding: '0px 10px'}}>
+              <a className="nav-link" href="/covidTrackerCountryWise">Country Wise Tracker</a>
             </li>
           </ul>
 

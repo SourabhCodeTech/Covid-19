@@ -7,6 +7,7 @@ import About from './Component/About'
 import Footer from './Component/Footer';
 import Covid from './Component/Covid';
 import CovidGraph from './Component/CovidGraph';
+import CovidTrakerCountryWise from './Component/CovidTrakerCountryWise'
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route exact path="/about" component={About} />
         <Route exact path="/covid" component={Covid} />
         <Route exact path="/covidGraph" component={CovidGraph} />
+        <Route exact path="/covidTrackerCountryWise" component={CovidTrakerCountryWise} />
       </Switch>
     </Router>
     <Footer />

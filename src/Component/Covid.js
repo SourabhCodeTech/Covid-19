@@ -30,42 +30,43 @@ function Covid() {
     }, [])
     return (
         <section id="Covid">
-            {/* <h2 id="covid-head">COVID-19 <span className="livesym">🔴</span>LIVE TRACKER</h2> */}
-           <br /><br /><br />
-           <div className="mb-5"><h2 className="text-center">COVID-19 <span className="livesym">🔴</span>LIVE TRACKER</h2></div>
+            <br />
+            <div className="mb-5">
+                <h2 className="text-center">COVID-19 <span className="livesym">🔴</span>LIVE TRACKER</h2>
+            </div>
             <p className="display-4 date">Time : <span id="time"></span></p>
-<br />
+            <br />
             <div className="table-responsive">
-            <table className="table table-hover">
-                <thead>
-                    <tr>
-                        <th>State Name</th>
-                        <th>Confirmed</th>
-                        <th>Recovered</th>
-                        <th>Deaths</th>
-                        <th>Active</th>
-                        <th>Updated Time</th>
-                    </tr>
-                </thead>
+                <table className="table table-hover">
+                    <thead>
+                        <tr>
+                            <th>State Name</th>
+                            <th>Confirmed</th>
+                            <th>Recovered</th>
+                            <th>Deaths</th>
+                            <th>Active</th>
+                            <th>Updated Time</th>
+                        </tr>
+                    </thead>
 
 
-                <tbody>
-                    {
-                        data.map((curElem, index) => {
-                            return (
-                                <tr key={index}>
-                                    <td> {curElem.state} </td>
-                                    <td> {curElem.confirmed} </td>
-                                    <td> {curElem.recovered} </td>
-                                    <td> {curElem.deaths} </td>
-                                    <td> {curElem.active} </td>
-                                    <td> {curElem.lastupdatedtime} </td>
-                                </tr>
-                            )
-                        })
-                    }
-                </tbody>
-            </table>
+                    <tbody>
+                        {
+                            data.map((curElem, index) => {
+                                return (
+                                    <tr key={index}>
+                                        <td> {curElem.state} </td>
+                                        <td> {curElem.confirmed} </td>
+                                        <td> {curElem.recovered} </td>
+                                        <td> {curElem.deaths} </td>
+                                        <td> {curElem.active} </td>
+                                        <td> {curElem.lastupdatedtime} </td>
+                                    </tr>
+                                )
+                            })
+                        }
+                    </tbody>
+                </table>
             </div>
 
         </section>

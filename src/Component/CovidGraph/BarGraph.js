@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React, { useState, useEffect } from 'react';
 import { Line } from 'react-chartjs-2';
 import { Chart as ChartJS, BarElement, Tooltip, Legend, PointElement, LineElement, CategoryScale, LinearScale } from "chart.js";
 
@@ -16,7 +16,7 @@ const BarGraph = ({ chartData }) => {
 
     let baseUrl = `https://data.covid19india.org/data.json`;
 
-    useEffect(()=> {
+    useEffect(() => {
         const fetchData = async () => {
             let response = await fetch(`${baseUrl}`)
             let json = await response.json()
@@ -26,30 +26,30 @@ const BarGraph = ({ chartData }) => {
     }, [baseUrl])
 
     var data = {
-      labels: chart?.map(x => x.state),
-      datasets: [
-      {
-        label: `Deaths`,
-        data: chart?.map(x => x.deaths),
-        borderWidth: 2,
-        borderColor: 'red',
-        backgroundColor: 'red'
-      },
-      {
-        label: `Recovered`,
-        data: chart?.map(x => x.recovered),
-        borderWidth: 2,
-        borderColor: 'green',
-        backgroundColor: 'green'
-      },
-      {
-        label: `Confirmed`,
-        data: chart?.map(x => x.confirmed),
-        borderWidth: 2,
-        borderColor: 'blue',
-        backgroundColor: 'blue'
-      },
-      ]
+        labels: chart?.map(x => x.state),
+        datasets: [
+            {
+                label: `Deaths`,
+                data: chart?.map(x => x.deaths),
+                borderWidth: 2,
+                borderColor: 'red',
+                backgroundColor: 'red'
+            },
+            {
+                label: `Recovered`,
+                data: chart?.map(x => x.recovered),
+                borderWidth: 2,
+                borderColor: 'green',
+                backgroundColor: 'green'
+            },
+            {
+                label: `Confirmed`,
+                data: chart?.map(x => x.confirmed),
+                borderWidth: 2,
+                borderColor: 'blue',
+                backgroundColor: 'blue'
+            },
+        ]
     }
 
     var options = {
@@ -65,10 +65,10 @@ const BarGraph = ({ chartData }) => {
         }
     }
     return (
-        <div style={{color: 'white', width: '90vw', margin: 'auto'}}>
-            <Line data={data} style={{height: 300, width: 1200}} options={options}  />
+        <div style={{ color: 'white', width: '90vw', margin: 'auto' }}>
+            <Line data={data} style={{ color: 'white', height: 300, width: 1200 }} options={options} />
         </div>
-        );
+    );
 }
 
 export default BarGraph;

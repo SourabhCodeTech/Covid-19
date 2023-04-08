@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
 body {
     background-color: rgb(53 39 47);
     overflow-x: hidden;
@@ -12,27 +13,27 @@ section {
     width: 100vw;
     height: 100%;
     font-weight: 700;
+    background: #321e03;
 }
 
 /* style for the heading of covid live tracker */
 
 section h2 {
-    padding: 5px;
     color: white;
     font-family: 'Ubuntu', sans-serif;
     font-weight: 900;
     font-size: 3.5rem;
-    text-shadow: 5px 5px 20px;
+    text-shadow: 1px 1px 4px white;
+    text-decoration: underline;
+    -webkit-text-stroke: 0.5px #578f91;
 }
 
 #covid-head {
     margin-top: 100px;
     text-align: center;
-    /* width: fit-content; */
 }
 
 /* date styling */
-
 .date {
     color: white;
     font-size: 1.5rem;
@@ -40,21 +41,24 @@ section h2 {
 
 table {
     width: 98.5vw;
-   overflow:auto;
+    overflow: auto;
     text-align: justify;
 }
 
-table, th, td {
+table,
+th,
+td {
     border: 1px solid yellow !important;
     padding: 5px 50px;
+    font-family: 'Ubuntu', sans-serif;
 }
 
- th{
-background-color: rgb(46, 1, 1);
+th {
+    background-color: #583505;
 
-} 
+}
 
-#covid{
+#covid {
     overflow: hidden;
     text-align: center;
     width: 100vw;
