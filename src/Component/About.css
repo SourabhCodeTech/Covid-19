@@ -9,7 +9,7 @@ html {
 /* Browser Scrollbar */
 ::-webkit-scrollbar {
     width: 15px;
-    background: #1c0303;
+    background: none;
 }
 
 /* Browser Scrollbar thumb */
@@ -19,8 +19,8 @@ html {
 }
 
 #about {
-    background: #cb3852;
-    padding-top: 25px;
+    background-image: repeating-linear-gradient( 150deg, rgb(63, 54, 54), transparent 100px);
+    padding: 40px;
 }
 
 h1 {
@@ -37,16 +37,11 @@ h1 {
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
+    margin-top: 20px;
     color: white;
 }
 
 .child {
-    text-align: center;
-    padding: 10px;
-    border: 1px solid;
-}
-
-.protectChild {
     text-align: center;
     padding: 10px;
 }
@@ -62,16 +57,17 @@ h1 {
 .img {
     width: 100%;
     height: auto;
+  
+  
 }
 
 p {
-    font-weight: 600;
-    font-family: 'Ubuntu', sans-serif;
+    font-weight: lighter;
+    font-size: 1.5rem;
 }
 
 span {
     color: yellow;
-    font-family: 'Ubuntu', sans-serif;
 }
 
 .btn {
@@ -84,49 +80,34 @@ span {
     color: white;
 }
 
-/* symptoms styling */
-#symptoms {
-    background: #cb3852;
-    height: fit-content;
-    width: 100vw;
-    padding-bottom: 5px;
+hr {
+    border-style: dotted none none;
+    border-color: rgb(83, 63, 63);
+    width: 9%;
+    border-width: 10px;
+    margin-top: 90px;
+    margin-bottom: 70px;
 }
 
-.h2{
-    padding: 5px;
-    color: #872323;
-    font-family: 'Ubuntu', sans-serif;
-    font-weight: 900;
-    font-size: 3.5rem;
-    text-shadow: 5px 5px 20px;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: #d7a7a7;
+/* symptoms styling */
+#symptoms {
+    height: fit-content;
+    width: fit-content !important;
 }
 
 .sym-img {
-    height: 200px;
-    width: 200px;
+    height: 250px;
+    width: 250px;
     border-radius: 125px;
     padding: 30px;
 }
 
 /* precaution start styling */
 #protect {
-    width: 100vw;
+    background-image: repeating-linear-gradient( 45deg, black, transparent 100px);
+    width: fit-content !important;
     height: fit-content;
     box-shadow: 16px 20px 33px black;
-    background: #fc6c87;
-}
-
-#protect h2{
-    padding: 5px;
-    color: #872323;
-    font-family: 'Ubuntu', sans-serif;
-    font-weight: 900;
-    font-size: 3.5rem;
-    text-shadow: 5px 5px 20px;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: #d7a7a7;
 }
 
 .box {
@@ -135,14 +116,14 @@ span {
 }
 
 .img-pre {
-    height: 11rem;
-    width: 11rem;
+    height: 250px;
+    width: 250px;
 }
 
 .large-pre {
     background-color: white;
     border-radius: 20px;
-    padding: 23px;
+    padding: 10px;
     width: 60%;
 }
 
@@ -197,19 +178,19 @@ span {
 }
 
 #vaccine{
-    background: #25051b;
+    background-image: repeating-linear-gradient( 150deg,#25051b,  transparent 100px);
     padding-bottom: 50px;
 }
 
 img {
-    height: 202px;
+    height: 220px;
     width: 220px;
     margin: 20px;
+    border-radius: 20px;
 }
 
 .v-span {
     color: yellow;
-    font-family: 'Ubuntu', sans-serif;
     font-size: 1.2rem;
 }
 
@@ -257,6 +238,15 @@ img {
 
 #cover:hover{
     animation: scale 1.3s alternate infinite; 
+}
+
+@keyframes rotate {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
 }
 
 @keyframes scale {
